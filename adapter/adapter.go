@@ -223,7 +223,7 @@ func (adapter substrateAdapter) Handle(req Request) (interface{}, error) {
 }
 
 func NewCall(m *types.Metadata, req Request) (types.Call, error) {
-	fmt.Print("[adapter.go] inside NewCall")
+	//fmt.Print("[adapter.go] inside NewCall")
 	reqId, err := convertTypes("uint64", fmt.Sprintf("%v", req.RequestId))
 	if err != nil {
 		return types.Call{}, err
@@ -243,7 +243,7 @@ func NewCall(m *types.Metadata, req Request) (types.Call, error) {
 }
 
 func NewFluxMonitorCall(m *types.Metadata, req Request) (types.Call, error) {
-	fmt.Print("[adapter.go] inside NewFluxMonitorCall")
+	//fmt.Print("[adapter.go] inside NewFluxMonitorCall")
 	i, err := strconv.ParseUint(req.FeedId, 10, 32)
 	if err != nil {
 		return types.Call{}, errors.Wrap(err, "failed parsing uint32")

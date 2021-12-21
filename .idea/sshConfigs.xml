@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="SshConfigs">
-    <configs>
-      <sshConfig host="ec2-54-209-240-158.compute-1.amazonaws.com" id="1214deaa-8c7d-4c2f-96cc-324201c0c143" keyPath="$USER_HOME$/local/LuckySky/ken-1.pem" port="22" nameFormat="DESCRIPTIVE" username="ec2-user" />
-    </configs>
-  </component>
-</project>
